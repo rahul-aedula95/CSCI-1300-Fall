@@ -5,18 +5,22 @@ using namespace std;
 int main(){
 
 
-    int age; 
+    int temp; 
 
     cout <<"What is the temperature?"<<endl;
 
-    cin >> age;
+    cin >> temp;
 
-    if(age>=90){
+    if(temp>=90){
         cout<<"It is hot outside"<<endl;
 
     }
 
-    else{
+    else if(temp >65 && temp <90){
+        cout << "It is pleasant"<<endl;
+    }
+
+    else {
         cout<<"It is cold outside"<<endl;
     }
 
